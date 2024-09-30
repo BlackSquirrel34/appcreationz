@@ -5,6 +5,15 @@ body {
     background-color: #474b4f; /* somewhat dark grey */
 }
 
+/* set color for links */
+.green-link {
+    color: #61892f; /* Sets the text color to green */
+}
+
+.green-link:hover {
+    color: #86c232; /* Changes color on hover */
+}
+
 /* Navigation Bar */
 nav {
     width: 100%;
@@ -250,6 +259,172 @@ nav {
   cursor: pointer;
 }
 
+
+/* Skills on About page */
+
+.skills{
+   margin-top: 0px; 
+   padding-top: 70px; 
+   background-color: #222629;
+   padding-bottom: 70px; 
+}
+
+.all_skills {
+  margin-top: 30px; 
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+  color: white;
+} 
+
+.skill {
+  border: 1px solid gray;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 30px;
+  box-shadow: 0 3px 10px gray;
+}
+
+.skill img {
+  height: 100px;
+  align-items: center;
+}
+
+.skill h6 {
+  align-items: center;
+  font-size: 25px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+  color: white;
+} 
+
+.skill p {
+  align-items: center;
+  font-size: 15px;
+  color: #6b6e70;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+} 
+
+
+/* style awards and education chronology in sync */
+
+/* Common section styles */
+section {
+  display: flex;                  /* Use flexbox for the section */
+  flex-direction: column;         /* Stack the headline and content vertically */
+  margin-top: 100px;             /* Space between sections */
+}
+
+/* Awards Section */
+#about-awards {
+  background-color: #474b4f;     /* Background color */
+  color: white;                  /* Header text color */
+}
+
+.awards-container {
+  display: flex;                  /* Flex display for container */
+  align-items: flex-start;        /* Align items at the start */
+}
+
+.awards-container h2 {
+  flex: 1;                        /* Take one column */
+  text-align: left;              /* Align header left */
+  font-size: 50px;               /* Font size for larger screens */
+  margin: 0;                     /* Remove margin */
+  padding-left: 100px; 
+}
+
+/* Awards */
+.awards {
+  flex: 2;                        /* Content takes two columns */
+  display: flex;                  /* Flex display */
+  flex-direction: column;         /* Stack awards vertically */
+  padding: 20px;                 /* Add padding */
+}
+
+/* Award Card */
+.award {
+  background: rgba(255, 255, 255, 0.1); /* Slight background for awards */
+  padding: 10px;                 
+  margin: 10px 0;                /* Space between individual awards */
+}
+
+/* Education Section */
+#about-edu {
+  background-color: #474b4f;     /* Same background for consistency */
+  color: white;                  /* Text color for education section */
+}
+
+.edu-container {
+  display: flex;                  /* Flex display for the container */
+  align-items: flex-start;        /* Align items at the start */
+}
+
+.edu-container h2 {
+  flex: 1;                        /* Take one column */
+  text-align: left;              /* Align header left */
+  font-size: 50px;               /* Font size for larger screens */
+  margin: 0;                     /* Remove margin */
+  padding-left: 100px; 
+}
+
+/* Edu-cards */
+.all-edu {
+  flex: 2;                        /* Content takes two columns */
+  display: flex;                  /* Flex display */
+  flex-direction: column;         /* Stack cards vertically */
+  padding: 20px;                 /* Add padding */
+}
+
+/* Edu Card */
+.edu-card {
+  background: rgba(255, 255, 255, 0.1); /* Background for edu cards */
+  padding: 10px;                  /* Inner padding */
+  margin: 10px 0;                /* Space between individual education cards */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;       /* Stack everything in a column */
+  }
+
+  .awards-container, .edu-container {
+    flex-direction: column;       /* Stack header and content in a single column */
+  }
+
+  .awards-container h2,
+  .edu-container h2 {
+    text-align: center;           /* Center headline text on small screens */
+    font-size: 30px;              /* Adjust font size */
+    margin-bottom: 20px;          /* Space below the headlines */
+  }
+
+  .award, .edu-card {
+    width: 90%;                   /* Wider cards on smaller screens */
+  }
+}
+
+
+
+
+
+
+
 /* Scroll to Top Button */
 
 .iconbutton{
@@ -270,8 +445,8 @@ nav {
 
 .page-footer {
   background-color: #222629;
-  padding-top: 70px; 
-  padding-bottom: 70px;
+  padding-top: 50px; 
+  padding-bottom: 90px;
   text-align: center;
   flex-grow: 0;
   flex-shrink: 0;

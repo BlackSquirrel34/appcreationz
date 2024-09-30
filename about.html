@@ -12,41 +12,38 @@
   <body>
     <!-- Navigation Bar -->
     <nav>
-      <div id="home">
-        <div class="profile_name">
-            <a class="home-btn" href="/">Home</a>
-            <div style="clear:both;"></div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="/about">About</a>
-          <a class="topmenu" href="/projects">Projects</a>
-          <a class="topmenu" href="/blog">Blog</a>
-          <a class="topmenu" href="#contact">Contact</a>
-        </div>
-      </div> 
+        <div id="home">
+            <div class="profile_name">
+                <a class="home-btn" href="./index.html">Home</a>
+            </div>
+            <div class="topdiv">
+                <a class="topmenu" href="./about.html">About</a>
+                <a class="topmenu" href="./projects.html">Projects</a>
+                <a class="topmenu" href="./blog.html">Blog</a>
+                <a class="topmenu" href="#contact">Contact</a>
+            </div>
+        </div> 
     </nav>
 
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="html_finalprojimages/laptop.gif" class="profile_image"/>
-      </div>
 
-      <div>
-          <h1>
-            Hi, I'm Blacksquirrel34! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
-          </h1>
-          <p>
-            I am not yet a full stack developer with several years of experience in both application and presentation layers.
-            I had a great time while completing a few degrees. In between I found out I like web development and started developing a web application with Django. That hooked me :)
-          </p>
-      </div>
+    <!-- About Me Welcome Section -->
+    <section id="about-me" class="container">
+        <img src="./assets/black_squirrel2.png" alt="Profile Mascot" class="profile_image"/>
+        <div class="welcome-text">
+            <h1>
+                Welcome! Glad you’re here!
+            </h1>
+            <p>
+            My elevator pitch here. My elevator pitch here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+        </div>
     </section>
 
     <div style="clear:both;"></div>
               
     <!-- Skills -->
     <section id="skills">
+      <div class="skills">
       <h2>Skills</h2>
       <div style="clear:both;"></div>
 
@@ -101,32 +98,39 @@
 
 
       </div>
+    </div>
     </section>
           
+
+  
+
+    <!-- Awards -->
+    <section id="about-awards">
+      <div class="awards-container">
+        <h2>Awards   </h2>
+      
+        <div style="clear:both;"></div>
+          <div class="awards">
+              <div class="award">
+                <h3>Stipendium StSt</h3>
+                <ul>
+                  <li>Dates started stopped...</li>
+                </ul>
+              </div>
+          </div>
+      </div>
+    </section>
+
+
+
     <!-- Education -->
     <section id="about-edu">
-      <div class="edu">
-        <h2>
-          Awards
-        </h2>
+      <div class="edu-container">
+
+        <h2>Education</h2>
         <div style="clear:both;"></div>
 
-        <div id="edu-container" class="edu-container">
-          <div class="edu-card">
-            <h3>Stipendium StSt</h3>
-            <ul>
-              <li>Dates started stopped...</li>
-            </ul>
-          </div>
-        </div>        
-        <div style="clear:both;"></div>
-
-        <h2>
-          Education/ chronology
-        </h2>
-        <div style="clear:both;"></div>
-
-        <div id="edu-container" class="edu-container">
+        <div class="all-edu">
           <div class="edu-card">
             <h3>Degree CitH</h3>
             <ul>
@@ -204,10 +208,16 @@
       </a>
     </div>
 
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3>Thank you for adding a new recommendation</h3>
-      <button onclick="showPopup(false)">Ok</button>
-    </div>
+    <footer class="page-footer">
+  <div id="contact">
+  <h3>Contact me:</h3>
+  <a href="https://www.linkedin.com/in/foerster-cith/" class="green-link">LinkedIn <img src="./assets/linkedin.png" width="30px"/></a>
+     <div style="clear:both;"></div>
+  <a href="https://github.com/BlackSquirrel34/" class="green-link">GitHub <img src="./assets/github.png" width="30px"/></a>
+</div>
+</footer>
+
+<div style="clear:both;"></div>
+
   </body>
 </html>
