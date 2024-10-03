@@ -185,7 +185,7 @@ nav {
 /* Blogposts */
 
 .blogposts{
-   margin-top: 100px; 
+   margin-top: 50px; 
 }
 
 .blogposts h2 {
@@ -199,6 +199,7 @@ nav {
 
 .all_posts {
   margin-top: 30px; 
+  margin-left:100px;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
@@ -214,6 +215,8 @@ nav {
   width: 2in;
   font-size: 30px;
   /* box-shadow: 0 3px 10px gray; */
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .post img {
@@ -291,8 +294,10 @@ nav {
   border-radius: 6px;
   text-align: center;
   margin: 50px;
+  margin-right: 30px;
+  margin-left: 30px;
   padding: 10px;
-  width: 2in;
+  width: 1.3in;
   font-size: 30px;
   box-shadow: 0 3px 10px gray;
 }
@@ -300,6 +305,8 @@ nav {
 .skill img {
   height: 100px;
   align-items: center;
+  max-width: 100px;
+  border-radius: 6px;
 }
 
 .skill h6 {
@@ -326,7 +333,7 @@ nav {
 section {
   display: flex;                  /* Use flexbox for the section */
   flex-direction: column;         /* Stack the headline and content vertically */
-  margin-top: 100px;             /* Space between sections */
+  margin-top: 50px;             /* Space between sections */
 }
 
 /* Awards Section */
@@ -348,7 +355,6 @@ section {
   padding-left: 100px; 
 }
 
-/* Awards */
 .awards {
   flex: 2;                        /* Content takes two columns */
   display: flex;                  /* Flex display */
@@ -360,18 +366,59 @@ section {
 .award {
   background: rgba(255, 255, 255, 0.1); /* Slight background for awards */
   padding: 10px;                 
-  margin: 10px 0;                /* Space between individual awards */
+  margin: 10px 0;                      /* Space between individual awards */
+  border-radius: 11px;             
 }
+
+
+/* Certificates */
+
+#about-certs {
+  background-color: #222629;     /* Background color */
+  color: white;                  /* Header text color */
+}
+
+.certs-container {
+  padding-top: 70px; 
+  padding-bottom: 50px; 
+  display: flex;                  /* Flex display for container */
+  align-items: flex-start;        /* Align items at the start */
+}
+
+.certs-container h2 {
+  flex: 1;                        /* Take one column */
+  text-align: left;              /* Align header left */
+  font-size: 50px;               /* Font size for larger screens */
+  margin: 0;                     /* Remove margin */
+  padding-left: 100px; 
+}
+
+.certs {
+  flex: 2;                        /* Content takes two columns */
+  display: flex;                  /* Flex display */
+  flex-direction: column;         /* Stack awards vertically */
+  padding: 20px;                 /* Add padding */
+}
+
+/* Certificate Card */
+.certificate {
+  background: rgba(255, 255, 255, 0.1); /* Slight background for certs */
+  padding: 10px;                 
+  margin: 10px 0;                /* Space between individual certs */
+  border-radius: 11px;
+}
+
 
 /* Education Section */
 #about-edu {
   background-color: #474b4f;     /* Same background for consistency */
-  color: white;                  /* Text color for education section */
+  color: white;                 /* Text color for education section */                
 }
 
-.edu-container {
+.edu-container { 
   display: flex;                  /* Flex display for the container */
   align-items: flex-start;        /* Align items at the start */
+  padding-bottom: 0px;      
 }
 
 .edu-container h2 {
@@ -395,32 +442,85 @@ section {
   background: rgba(255, 255, 255, 0.1); /* Background for edu cards */
   padding: 10px;                  /* Inner padding */
   margin: 10px 0;                /* Space between individual education cards */
+  border-radius: 11px;
 }
 
-/* Responsive Styles */
+
+
+/* Responsive Styles for awards, certificates, education */
 @media (max-width: 600px) {
   section {
     flex-direction: column;       /* Stack everything in a column */
   }
 
-  .awards-container, .edu-container {
+  .awards-container, .edu-container, .certs-container {
     flex-direction: column;       /* Stack header and content in a single column */
   }
 
   .awards-container h2,
-  .edu-container h2 {
+  .edu-container h2,
+  .certs-container h2 {
     text-align: center;           /* Center headline text on small screens */
-    font-size: 30px;              /* Adjust font size */
+    font-size: 50px;            /* Adjust font size */
     margin-bottom: 20px;          /* Space below the headlines */
   }
 
-  .award, .edu-card {
+  .award, .edu-card, .certificate {
     width: 90%;                   /* Wider cards on smaller screens */
   }
 }
 
 
+/* Recommendations */
 
+.recommendations {
+  background-color: #222629;
+  color: white;
+  padding-top: 70px; 
+  padding-bottom: 50px; 
+}
+
+.recommendations h2 {
+  font-size: 50px;               /* Font size for larger screens */
+  margin: 0;   
+  text-align: center;                  /* Remove margin */
+}
+
+.all_recommendations {
+  margin-top: 30px; 
+  display: flex;
+  align-items: center;
+  margin-left: 220px;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 20px;
+}
+
+.recommendation {
+  font-style: italic;
+  text-align: left;
+  width: 21.875rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 11px;
+  box-shadow: 0 3px 10px gray;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid gray;
+  font-size: 18px;
+  height:200px
+}
+
+.recommendation h5 {
+  text-align: left;
+  font-size: 18px;
+}
+
+.recommendation span {
+  color: white;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 
 
