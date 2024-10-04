@@ -14,6 +14,14 @@ body {
     color: #86c232; /* Changes color on hover */
 }
 
+.impressum-link {
+    color: darkgray; /* Sets the text color to green */
+}
+
+.impressum-link:hover {
+    color: white; /* Changes color on hover */
+}
+
 /* Navigation Bar */
 nav {
     width: 100%;
@@ -98,13 +106,15 @@ nav {
 }
 
 .profile_image {
-    width: 350%;
-    max-width: 350px;  /* Ensure the image doesn’t get too large */
+    width: 380px;
+    max-width: 380px;  /* Ensure the image doesn’t get too large */
     margin-right: 20px; /* Space between image and text */
 }
 
 .welcome-text {
     flex-grow: 1;
+    margin-left: 50px;
+    margin-right: 0px;
 }
 
 /* Responsive Styles */
@@ -132,6 +142,7 @@ nav {
 
 .all_projects {
   margin-top: 30px; 
+  margin-left:100px;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
@@ -156,6 +167,8 @@ nav {
   width: 2in;
   font-size: 30px;
   box-shadow: 0 3px 10px gray;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .project img {
@@ -182,7 +195,7 @@ nav {
 
 
 
-/* Blogposts */
+/* Blogposts in Overview */
 
 .blogposts{
    margin-top: 50px; 
@@ -241,26 +254,180 @@ nav {
   margin-block-end: 5px;
 } 
 
-.post-btn {
-  border: 1px solid #333333;
-  background-color: #f44336;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 16px;
+/* Blogposts in full detail */
+
+/* Dark variant */
+#blog-post1, #blog-post3 {
+  background-color: #222629;      /* Background color */
+  color: white;                    /* Header text color */
+  display: flex;                   /* Use flexbox for layout */
 }
 
-.post-btn:hover {
-  background-color: white;
-  border: 1px solid #7600bc;
-  color: #fff;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  cursor: pointer;
+.blog-container-dark {
+  display: flex;                   /* Flex display for container */
+  width: 100%;                    /* Full width for the container */
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
+
+/* Margin column styling */
+.margin-column-dark {
+  padding-left: 100px;            /* Control left padding */
+  display: flex;                   /* Making it a flex container to align items */
+  flex-direction: column;          /* Stack items vertically */
+}
+
+.margin-column-dark h2 {
+  margin: 0;                      /* Remove margin */
+  font-size: 50px;                /* Font size for larger screens */
+}
+
+.margin-column-dark .img {
+  margin-top: 200px;               /* Space above the margin image */
+  max-width: 200px;
+}
+
+/* Main content container */
+.post-dark {
+  flex: 2;                        /* Content takes the remaining space */
+  display: flex;                  /* Flex display */
+  flex-direction: column;         /* Stack content vertically */
+  padding: 20px;   
+  margin-left: 150px;               /* Add padding */
+}
+
+/* Paragraph styling */
+.paragraph-dark {
+  background: rgba(255, 255, 255, 0.1); /* Slight background for paragraphs */
+  padding: 10px;                    /* Padding for paragraphs */
+  margin: 10px 0;                  /* Space between individual paragraphs */
+  border-radius: 11px;             /* Rounded corners */
+  margin-right: 50px;
+}
+
+/* Image styling for the intext image */
+.intext-img-dark img {
+  max-width: 300px;                 /* Responsive image for intext */
+  height: auto;                    /* Maintain aspect ratio */
+  display: block;                  /* Block-level to allow margin */
+  margin: 10px auto;              /* Center align with some spacing */
+}
+
+/* Margin image styling */
+.margin-column-dark .img img {
+  max-width: 100%;                 /* Make margin images responsive */
+  height: auto;                    /* Maintain aspect ratio */
+  display: block;                  /* Block-level to keep layout */
+}
+
+
+/* light variant */
+#blog-post2, #blog-post4 {
+  background-color: #474b4f;       /* Background color */
+  color: white;                    /* Header text color */
+  display: flex;                   /* Use flexbox for layout */
+}
+
+.blog-container-light {
+  display: flex;                   /* Flex display for container */
+  width: 100%;                    /* Full width for the container */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Margin column styling */
+.margin-column {
+  padding-left: 100px;            /* Control left padding */
+  display: flex;                   /* Making it a flex container to align items */
+  flex-direction: column;          /* Stack items vertically */
+}
+
+.margin-column h2 {
+  margin: 0;                      /* Remove margin */
+  font-size: 50px;                /* Font size for larger screens */
+}
+
+.margin-column .img {
+  margin-top: 200px;               /* Space above the margin image */
+  max-width: 200px;
+}
+
+/* Main content container */
+.post-light {
+  flex: 2;                        /* Content takes the remaining space */
+  display: flex;                  /* Flex display */
+  flex-direction: column;         /* Stack content vertically */
+  padding: 20px;   
+  margin-left: 150px;               /* Add padding */
+}
+
+/* Paragraph styling */
+.paragraph-light {
+  background: rgba(255, 255, 255, 0.1); /* Slight background for paragraphs */
+  padding: 10px;                    /* Padding for paragraphs */
+  margin: 10px 0;                  /* Space between individual paragraphs */
+  border-radius: 11px;             /* Rounded corners */
+  margin-right: 50px;s
+}
+
+/* Image styling for the intext image */
+.intext-img img {
+  max-width: 300px;                 /* Responsive image for intext */
+  height: auto;                    /* Maintain aspect ratio */
+  display: block;                  /* Block-level to allow margin */
+  margin: 10px auto;              /* Center align with some spacing */
+}
+
+/* Margin image styling */
+.margin-column .img img {
+  max-width: 100%;                 /* Make margin images responsive */
+  height: auto;                    /* Maintain aspect ratio */
+  display: block;                  /* Block-level to keep layout */
+}
+
+/* Responsive Design for blog posts on full length */
+@media (max-width: 600px) {
+  #blog-post1, #blog-post2, #blog-post3, #blog-post4 {
+    flex-direction: column;        /* Stack everything vertically */
+  }
+
+  .blog-container-dark, .blog-container-light {
+    flex-direction: column;        /* Stack header and content in a single column */
+    align-items: center;           /* Center the contents in smaller screens */
+  }
+
+  .margin-column-dark, .margin-column {
+      padding-left: 0;              /* Remove left padding for smaller screens */
+      text-align: center;           /* Center align text */
+  }
+
+  .margin-column-dark h2 {
+    font-size: 30px;              /* Adjust font size for smaller screens */
+    margin-bottom: 20px;          /* Space below the headline */
+  }
+
+  .margin-column h2 {
+    font-size: 30px;              /* Adjust font size for smaller screens */
+    margin-bottom: 20px;          /* Space below the headline */
+  }
+
+  .margin-column-dark .img {
+    margin-top: 10px;             /* Reduce margin for smaller screens */
+  }
+
+  .margin-column .img {
+    margin-top: 10px;             /* Reduce margin for smaller screens */
+  }
+
+  .post-dark {
+    width: 90%;                    /* Make post content responsive */
+  }
+
+  .post-light {
+    width: 90%;                    /* Make post content responsive */
+  }
+}
+
 
 
 /* Skills on About page */
@@ -268,6 +435,7 @@ nav {
 .skills{
    margin-top: 0px; 
    padding-top: 70px; 
+   padding-left: 70px;
    background-color: #222629;
    padding-bottom: 70px; 
 }
@@ -305,7 +473,7 @@ nav {
 .skill img {
   height: 100px;
   align-items: center;
-  max-width: 100px;
+  max-width: 120px;
   border-radius: 6px;
 }
 
@@ -327,7 +495,7 @@ nav {
 } 
 
 
-/* style awards and education chronology in sync */
+/* style awards, work experience and education chronology in sync */
 
 /* Common section styles */
 section {
@@ -337,14 +505,22 @@ section {
 }
 
 /* Awards Section */
-#about-awards {
+#about-workexperience, #about-awards {
   background-color: #474b4f;     /* Background color */
   color: white;                  /* Header text color */
 }
 
-.awards-container {
+.experience-container, .awards-container {
   display: flex;                  /* Flex display for container */
   align-items: flex-start;        /* Align items at the start */
+}
+
+.experience-container h2 {
+  flex: 1;                        /* Take one column */
+  text-align: left;              /* Align header left */
+  font-size: 50px;               /* Font size for larger screens */
+  margin: 0;                     /* Remove margin */
+  padding-left: 100px; 
 }
 
 .awards-container h2 {
@@ -355,15 +531,15 @@ section {
   padding-left: 100px; 
 }
 
-.awards {
+.work-experience, .awards {
   flex: 2;                        /* Content takes two columns */
   display: flex;                  /* Flex display */
   flex-direction: column;         /* Stack awards vertically */
   padding: 20px;                 /* Add padding */
 }
 
-/* Award Card */
-.award {
+/* work card, Award Card */
+.work, .award {
   background: rgba(255, 255, 255, 0.1); /* Slight background for awards */
   padding: 10px;                 
   margin: 10px 0;                      /* Space between individual awards */
@@ -453,10 +629,11 @@ section {
     flex-direction: column;       /* Stack everything in a column */
   }
 
-  .awards-container, .edu-container, .certs-container {
+  .experience-container, .awards-container, .edu-container, .certs-container {
     flex-direction: column;       /* Stack header and content in a single column */
   }
 
+  .experience-container h2,
   .awards-container h2,
   .edu-container h2,
   .certs-container h2 {
@@ -465,7 +642,7 @@ section {
     margin-bottom: 20px;          /* Space below the headlines */
   }
 
-  .award, .edu-card, .certificate {
+  .work, .award, .edu-card, .certificate {
     width: 90%;                   /* Wider cards on smaller screens */
   }
 }
@@ -548,7 +725,13 @@ section {
   padding-top: 50px; 
   padding-bottom: 90px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   flex-grow: 0;
   flex-shrink: 0;
   color: white;
+}
+
+.impressum-ref {
+  padding-top: 70px; 
 }
