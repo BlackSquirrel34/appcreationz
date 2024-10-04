@@ -174,6 +174,7 @@ nav {
 .project img {
   height: 100px;
   align-items: center;
+  border-radius: 6px;
 }
 
 .project h6 {
@@ -233,8 +234,9 @@ nav {
 }
 
 .post img {
-  height: 85px;
+  height: 100px;
   align-items: center;
+  border-radius: 6px;
 }
 
 .post h6 {
@@ -257,17 +259,17 @@ nav {
 /* Blogposts in full detail */
 
 /* Dark variant */
-#blog-post1, #blog-post3 {
-  background-color: #222629;      /* Background color */
-  color: white;                    /* Header text color */
-  display: flex;                   /* Use flexbox for layout */
-}
 
 .blog-container-dark {
+  padding-top: 70px;
+  padding-bottom: 70px;
   display: flex;                   /* Flex display for container */
   width: 100%;                    /* Full width for the container */
   margin-top: 100px;
   margin-bottom: 50px;
+  background-color: #222629;      /* Background color */
+  color: white;                    /* Header text color */
+  display: flex;                   /* Use flexbox for layout */
 }
 
 /* Margin column styling */
@@ -279,7 +281,13 @@ nav {
 
 .margin-column-dark h2 {
   margin: 0;                      /* Remove margin */
-  font-size: 50px;                /* Font size for larger screens */
+  font-size: 30px;                /* Font size for larger screens */
+}
+
+.margin-column-dark h3 {
+  margin: 0;                      /* Remove margin */
+  margin-top: 20px; 
+  font-size: 20px;                /* Font size for larger screens */
 }
 
 .margin-column-dark .img {
@@ -293,7 +301,7 @@ nav {
   display: flex;                  /* Flex display */
   flex-direction: column;         /* Stack content vertically */
   padding: 20px;   
-  margin-left: 150px;               /* Add padding */
+  margin-left: 120px;               /* Add padding */
 }
 
 /* Paragraph styling */
@@ -307,6 +315,7 @@ nav {
 
 /* Image styling for the intext image */
 .intext-img-dark img {
+  border-radius: 11px; 
   max-width: 300px;                 /* Responsive image for intext */
   height: auto;                    /* Maintain aspect ratio */
   display: block;                  /* Block-level to allow margin */
@@ -315,6 +324,7 @@ nav {
 
 /* Margin image styling */
 .margin-column-dark .img img {
+  border-radius: 11px;
   max-width: 100%;                 /* Make margin images responsive */
   height: auto;                    /* Maintain aspect ratio */
   display: block;                  /* Block-level to keep layout */
@@ -322,17 +332,17 @@ nav {
 
 
 /* light variant */
-#blog-post2, #blog-post4 {
-  background-color: #474b4f;       /* Background color */
-  color: white;                    /* Header text color */
-  display: flex;                   /* Use flexbox for layout */
-}
 
 .blog-container-light {
+  padding-top: 70px;
+  padding-bottom: 70px;
   display: flex;                   /* Flex display for container */
   width: 100%;                    /* Full width for the container */
   margin-top: 50px;
   margin-bottom: 50px;
+  background-color: #474b4f;       /* Background color */
+  color: white;                    /* Header text color */
+  display: flex;  
 }
 
 /* Margin column styling */
@@ -344,7 +354,13 @@ nav {
 
 .margin-column h2 {
   margin: 0;                      /* Remove margin */
-  font-size: 50px;                /* Font size for larger screens */
+  font-size: 30px;                /* Font size for larger screens */
+}
+
+.margin-column h3 {
+  margin: 0;                      /* Remove margin */
+  margin-top: 20px; 
+  font-size: 20px;                /* Font size for larger screens */
 }
 
 .margin-column .img {
@@ -358,7 +374,7 @@ nav {
   display: flex;                  /* Flex display */
   flex-direction: column;         /* Stack content vertically */
   padding: 20px;   
-  margin-left: 150px;               /* Add padding */
+  margin-left: 120px;               /* Add padding */
 }
 
 /* Paragraph styling */
@@ -367,11 +383,12 @@ nav {
   padding: 10px;                    /* Padding for paragraphs */
   margin: 10px 0;                  /* Space between individual paragraphs */
   border-radius: 11px;             /* Rounded corners */
-  margin-right: 50px;s
+  margin-right: 50px;
 }
 
 /* Image styling for the intext image */
 .intext-img img {
+  border-radius: 11px; 
   max-width: 300px;                 /* Responsive image for intext */
   height: auto;                    /* Maintain aspect ratio */
   display: block;                  /* Block-level to allow margin */
@@ -380,6 +397,7 @@ nav {
 
 /* Margin image styling */
 .margin-column .img img {
+  border-radius: 11px;
   max-width: 100%;                 /* Make margin images responsive */
   height: auto;                    /* Maintain aspect ratio */
   display: block;                  /* Block-level to keep layout */
@@ -499,9 +517,9 @@ nav {
 
 /* Common section styles */
 section {
+  margin-top: 70px;
   display: flex;                  /* Use flexbox for the section */
   flex-direction: column;         /* Stack the headline and content vertically */
-  margin-top: 50px;             /* Space between sections */
 }
 
 /* Awards Section */
@@ -667,7 +685,7 @@ section {
   margin-top: 30px; 
   display: flex;
   align-items: center;
-  margin-left: 220px;
+  margin-left: 100px;
   flex-direction: row;
   flex-flow: wrap;
   padding: 20px;
