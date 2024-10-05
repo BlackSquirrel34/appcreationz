@@ -15,7 +15,8 @@ body {
 }
 
 .impressum-link {
-    color: darkgray; /* Sets the text color to green */
+    color: darkgray; /* Sets the text color to gray */
+    text-decoration: none;
 }
 
 .impressum-link:hover {
@@ -388,11 +389,18 @@ nav {
 
 /* Image styling for the intext image */
 .intext-img img {
-  border-radius: 11px; 
-  max-width: 300px;                 /* Responsive image for intext */
-  height: auto;                    /* Maintain aspect ratio */
-  display: block;                  /* Block-level to allow margin */
-  margin: 10px auto;              /* Center align with some spacing */
+    border-radius: 11px;
+    max-width: 500px; /* Responsive image for intext */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block-level to allow margin */
+    margin: 10px auto; /* Center align with some spacing */
+}
+
+.caption {
+    text-align: center; /* Center the caption */
+    font-size: 0.9em;
+    color: white; /* Styling for caption */
+    margin-top: 5px; /* Optional: add space above the caption */
 }
 
 /* Margin image styling */
