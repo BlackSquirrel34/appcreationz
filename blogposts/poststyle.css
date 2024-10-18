@@ -1,327 +1,209 @@
-body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/* Blogposts in full detail */
+.blog-post{
+   margin-top: 90px; 
 }
 
-/* Navigation Bar */
-
-#home {
-  background-color:  #7600bc;
-  padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1cm;
-  padding-top: 2cm;
-  padding-bottom: 2cm;
-  height: 5mm;
- }
-
-.topmenu {
-  color: lightseagreen;
-  margin: 10px;
-  padding: 20px;
-  font-size: 20px;
-  text-decoration:none;
-}
-
-.topmenu:hover {
-  color: white;
-  font-weight: bolder;
-  text-decoration: underline;
-
-}
-
-.topdiv {
-  float: right;
-  padding-right: 1cm;
-}
-
-.profile_name {
-  float: left;
-  padding-left: 2cm;
-  /* Add the styles here */
-  color: lightseagreen;
-  font-size: 30px;
-
-}
-
-.profile_name .contact_info {
-  font-size: 15px;
-  font-style: italic;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-.contact_info img {
-  width:25px;
-  margin-right: 10px;
-  float:left;
-}
-
-/* Titles */
-
-h2 {
-  text-align: justify;
-  font-size: 50px;
+.blog-post h2 {
   text-align: center;
-  float: left;
-  color: #7600bc;
-  margin: 30px;
-  margin-left: 60px;
-  margin-top: 40px;
-  margin-bottom: 0px;
-}
-
-.introduction {
-  text-align: justify;
-  font-size: 30px;
-  text-align: center;
-  float: left;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  animation-duration: 5s;
-  position: relative;
-}
-
-/* Used in the About Me sections */
-
-.container {
-  display: flex;
-}
-
-/* About Me */
-
-.about-me {
-  display: flex;
-  align-items: center;
-}
-
-#about-me h1 {
-  font-size: 65px;
-  margin-top: 90px;
-  color: #7600bc;
-}
-
-#about-me p {
-  font-size: 25px;
-  color: rgb(128, 128, 128);
-  margin-top: -1cm;
-}
-
-.profile_image {
-  width: 550px;
-  height: fit-content;
-  vertical-align: middle;
-  margin: 5px;
-}
-
-/* Skills */
-
-.all_skills {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-}
-
-.skill {
-  border: 1px solid gray;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 30px;
-  box-shadow: 0 3px 10px gray;
-}
-
-.skill img {
-  height: 85px;
-  align-items: center;
-}
-
-.skills h6 {
-  align-items: center;
   font-size: 50px;
   margin-block-start: 8px;
   margin-block-end: 5px;
   font-weight: bold;
+  color: white;
 } 
 
-.skills p {
-  align-items: center;
-  font-size: 5px;
-  color: gray;
-  margin-block-start: 5px;
-  margin-block-end: 5px;
-} 
 
-.flex_center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.post-head {
+  color: white;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding-bottom: 70px;
 }
 
-/* Projects */
+/* Dark variant */
 
-.projects-container {
-  margin-top: 30px;
-  margin-left: 60px;
+.blog-container-dark {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  display: flex;                   /* Flex display for container */
+  width: 100%;                    /* Full width for the container */
+  background-color: #222629;      /* Background color */
+  color: white;                    /* Header text color */
+  display: flex;                   /* Use flexbox for layout */
 }
 
-.projects-container hr {
-  border: 1px solid lightgray;
-  width: 75%;
-  margin-left: 5cm;
+/* Margin column styling */
+.margin-column-dark {
+  padding-left: 100px;            /* Control left padding */
+  display: flex;                   /* Making it a flex container to align items */
+  flex-direction: column;          /* Stack items vertically */
 }
 
-.project-card {
-  margin: 0 15px 15px 30px;
-  padding-bottom: 5px;
+.margin-column-dark h2 {
+  margin: 0;                      /* Remove margin */
+  font-size: 30px;                /* Font size for larger screens */
 }
 
-.project-card h3 {
-  font-size: 25px;
-  margin-left: 30px;
+.margin-column-dark h3 {
+  margin: 0;                      /* Remove margin */
+  margin-top: 20px; 
+  font-size: 20px;                /* Font size for larger screens */
 }
 
-.project-card li {
-  font-size: 20px;
-  margin-left: 30px;
+.margin-column-dark .img {
+  margin-top: 200px;               /* Space above the margin image */
+  max-width: 200px;
 }
 
-/* Recommendations */
-
-.all_recommendations {
-  display: flex;
-  align-items: center;
-  margin-left: 1in;
-  flex-direction: row;
-  flex-flow: wrap;
-  padding: 20px;
+/* Main content container */
+.post-dark {
+  flex: 2;                        /* Content takes the remaining space */
+  display: flex;                  /* Flex display */
+  flex-direction: column;         /* Stack content vertically */
+  padding: 20px;   
+  margin-left: 120px;               /* Add padding */
 }
 
-.recommendation {
-  font-style: italic;
-  text-align: left;
-  width: 21.875rem;
-  padding: 1rem;
-  background-color: #fff;
+/* Paragraph styling */
+.paragraph-dark {
+  background: rgba(255, 255, 255, 0.1); /* Slight background for paragraphs */
+  padding: 10px;                    /* Padding for paragraphs */
+  margin: 10px 0;                  /* Space between individual paragraphs */
+  border-radius: 11px;             /* Rounded corners */
+  margin-right: 50px;
+}
+
+/* Image styling for the intext image */
+.intext-img-dark img {
+  border-radius: 11px; 
+  max-width: 300px;                 /* Responsive image for intext */
+  height: auto;                    /* Maintain aspect ratio */
+  display: block;                  /* Block-level to allow margin */
+  margin: 10px auto;              /* Center align with some spacing */
+}
+
+/* Margin image styling */
+.margin-column-dark .img img {
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
-  margin: 10px;
-  border:1px solid gray;
-  font-size: 18px;
-  height:150px
+  max-width: 100%;                 /* Make margin images responsive */
+  height: auto;                    /* Maintain aspect ratio */
+  display: block;                  /* Block-level to keep layout */
 }
 
-.recommendation span {
-  color: #7600bc;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+
+/* light variant */
+
+.blog-container-light {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  display: flex;                   /* Flex display for container */
+  width: 100%;                    /* Full width for the container */
+  background-color: #474b4f;       /* Background color */
+  color: white;                    /* Header text color */
+  display: flex;  
 }
 
-/* Scroll to Top Button */
-
-.iconbutton{
-  width: 48px;
-  height: 48px;
-  border-radius: 100%;
-  background-color: #7600bc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  right: 3%;
-  bottom: 3%;
-  cursor: pointer;
+/* Margin column styling */
+.margin-column {
+  padding-left: 100px;            /* Control left padding */
+  display: flex;                   /* Making it a flex container to align items */
+  flex-direction: column;          /* Stack items vertically */
 }
 
-/* Form Pop-up */
-
-.popup {
-  width:400px;
-  background-color: #e8bcf0;
-  border-radius: 3mm;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  position: fixed;
-  /* padding: 30px; */
-  visibility: hidden;
+.margin-column h2 {
+  margin: 0;                      /* Remove margin */
+  font-size: 30px;                /* Font size for larger screens */
 }
 
-.popup img {
-  padding-top: 20px;
+.margin-column h3 {
+  margin: 0;                      /* Remove margin */
+  margin-top: 20px; 
+  font-size: 20px;                /* Font size for larger screens */
 }
 
-.popup button {
-  background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 20px;
-  margin-left: 25%;
+.margin-column .img {
+  margin-top: 200px;               /* Space above the margin image */
+  max-width: 200px;
 }
 
-.popup button:hover {
-  background-color: #fff;
-  border: 2px solid #7600bc;
-  color: #7600bc;
-  display: block;
-  font-weight: bolder;
-  text-align: center;
-  cursor: pointer;
-  margin-left: 25%;
+/* Main content container */
+.post-light {
+  flex: 2;                        /* Content takes the remaining space */
+  display: flex;                  /* Flex display */
+  flex-direction: column;         /* Stack content vertically */
+  padding: 20px;   
+  margin-left: 120px;               /* Add padding */
 }
 
-/* Recommendation Form */
-
-input, textarea {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  margin: 10px;  
-  width:100%;
+/* Paragraph styling */
+.paragraph-light {
+  background: rgba(255, 255, 255, 0.1); /* Slight background for paragraphs */
+  padding: 10px;                    /* Padding for paragraphs */
+  margin: 10px 0;                  /* Space between individual paragraphs */
+  border-radius: 11px;             /* Rounded corners */
+  margin-right: 50px;
 }
 
-fieldset {
-  display: flexbox;
-  align-content: center;
-  justify-content: center;  
-  padding: 25px; 
-  margin-left: 50px; 
-  margin-right: 50px;   
-  border: thin solid white;
-  width: 50%;
+/* Image styling for the intext image */
+.intext-img img {
+    border-radius: 11px;
+    max-width: 500px; /* Responsive image for intext */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block-level to allow margin */
+    margin: 10px auto; /* Center align with some spacing */
 }
 
-/* Buttons */
-
-button {
-  background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 20px;
+.caption {
+    text-align: center; /* Center the caption */
+    font-size: 0.9em;
+    color: white; /* Styling for caption */
+    margin-top: 5px; /* Optional: add space above the caption */
 }
 
-button:hover {
-  background-color: #7600bc;
-  border: 1px solid #7600bc;
-  color: #fff;
-  display: block;
-  border-radius: 6px;
-  text-align: center;
-  cursor: pointer;
+/* Margin image styling */
+.margin-column .img img {
+  border-radius: 11px;
+  max-width: 100%;                 /* Make margin images responsive */
+  height: auto;                    /* Maintain aspect ratio */
+  display: block;                  /* Block-level to keep layout */
+}
+
+/* Responsive Design for blog posts on full length */
+@media (max-width: 600px) {
+
+  .blog-container-dark, .blog-container-light {
+    flex-direction: column;        /* Stack header and content in a single column */
+    align-items: center;           /* Center the contents in smaller screens */
+  }
+
+  .margin-column-dark, .margin-column {
+      padding-left: 0;              /* Remove left padding for smaller screens */
+      text-align: center;           /* Center align text */
+  }
+
+  .margin-column-dark h2 {
+    font-size: 30px;              /* Adjust font size for smaller screens */
+    margin-bottom: 20px;          /* Space below the headline */
+  }
+
+  .margin-column h2 {
+    font-size: 30px;              /* Adjust font size for smaller screens */
+    margin-bottom: 20px;          /* Space below the headline */
+  }
+
+  .margin-column-dark .img {
+    margin-top: 10px;             /* Reduce margin for smaller screens */
+  }
+
+  .margin-column .img {
+    margin-top: 10px;             /* Reduce margin for smaller screens */
+  }
+
+  .post-dark {
+    width: 90%;                    /* Make post content responsive */
+  }
+
+  .post-light {
+    width: 90%;                    /* Make post content responsive */
+  }
 }
