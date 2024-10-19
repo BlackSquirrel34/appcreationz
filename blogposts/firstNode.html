@@ -6,6 +6,9 @@
     <!-- make responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Appcreationz by Blacksquirrel</title>
+    <!-- code highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
     <link rel="stylesheet" href="./style.css"/>
     <link rel="stylesheet" href="./poststyle.css"/>
     <!-- <script src="./script.js"></script> -->
@@ -63,7 +66,7 @@
                 If these commands don't work, don’t worry! You’ll need to download and install Node.js. Visit the official Node website at nodejs.org to get the latest version. The installation process is simple and should only take a few minutes. 
                 For Mac users, you can also install Node using the Homebrew package manager. Just run the command brew install node, and you’ll be good to go! Let’s ensure you’re all set up so we can dive into building your Node server.</p>
 
-                <div class="intext-img-dark"><img  src="./post-assets/firstNode/first-node-setup.png"></div><br>
+               
               
             
               </div>
@@ -86,9 +89,7 @@
                   cd first-node<br>
 Open up your editor for this directory, then create a file named index.js</p>
 
-                 <div class="intext-img">
-                  <img src="../assets/gearwheels.webp" alt="Contact Page screenshot 2">
-                </div><br>
+                <div class="intext-img-dark"><img  src="./post-assets/firstNode/first-node-setup.png"></div><br>
 
               </div>
 
@@ -108,9 +109,7 @@ Open up your editor for this directory, then create a file named index.js</p>
                 <h3>Paragraph heading</h3>
                 <p>You can create a simple web server in Node using its built-in node:http module. Write these lines of code into your index.js:</p>
 
-                <div class="intext-img-dark"><img  src="../assets/gearwheels.webp"></div>
-
-                <p>
+                <div class="intext-img-dark"> <pre><code class="language-javascript">
                   // Basic Web Server Example
                   const { createServer } = require('node:http');
 
@@ -123,7 +122,10 @@ Open up your editor for this directory, then create a file named index.js</p>
                   server.listen(3000, '127.0.0.1', () => {
                     console.log('Server is running...');
                   });
-                </p>
+                </code></pre>
+              </div>
+
+               
 
                 <p>
                   This is Node.js's version of the classic "Hello World" example, and the best part is you don’t need to install anything to run this script; it utilizes Node's built-in capabilities.The code includes some key concepts worth noting
