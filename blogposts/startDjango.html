@@ -6,6 +6,8 @@
     <!-- make responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Appcreationz by Blacksquirrel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
     <link rel="stylesheet" href="./style.css"/>
     <link rel="stylesheet" href="./poststyle.css"/>
     <!-- <script src="./script.js"></script> -->
@@ -31,9 +33,10 @@
  <div class="blog-post">
       <h2>Getting Started with Django:</h2>
       <h2>Your First Web Development Project</h2>
+      <br>
 
        <div class="intext-img">
-            <img src="../assets/gearwheels.webp" alt="caption"/>
+            <img width=500px src="./post-assets/squirrels/construction_upscaled.jpg" alt="squirrel-construction-worker"/>
       </div> 
 
       <div class="post-head">
@@ -47,16 +50,14 @@
 <section id="11">
       <div class="blog-container-dark">
         <div class="margin-column-dark">
-        <h2>0. Prerequisites</h2>
-         <div class="img"><img  src="....//assets/gearwheels.webp"></div>
+        <h2></h2>
+         <!-- <div class="img"><img  src="#"></div>-->
        </div>
           <div class="post-dark">
               <div class="paragraph-dark">
                 <h3>0. Prerequisites</h3>
-                <p>Before we proceed with this tutorial, it's important to make sure you have Python installed on your machine. You can check this by running the command Python --version in a terminal. If Python is installed, the version number will be displayed. Django, the web framework we’ll be working with, is built on Python, so having it set up is essential. If you haven't installed Python yet, you can find detailed instructions on how to do so at their official website: python.org.
+                <p>Before we proceed with this tutorial, it's important to make sure you have Python installed on your machine. You can check this by running the command Python --version in a terminal. If Python is installed, the version number will be displayed. Django, the web framework we’ll be working with, is built on Python, so having it set up is essential. If you haven't installed Python yet, you can find detailed instructions on how to do so at their official website at <a href="https://www.python.org/" class="green-link">python.org</a>.
                 </p>
-
-                <div class="intext-img-dark"><img  src="../assets/gearwheels.webp"></div><br>
               
                 <p>Python is great language to learn; it’s a versatile language with a wealth of excellent resources and good documentation to help you along the way.
                 </p>
@@ -71,8 +72,8 @@
      <section id="22">
       <div class="blog-container-light">
         <div class="margin-column">
-        <h2>Headline</h2>
-         <div class="img"><img  src="../assets/gearwheels.webp"></div>
+        <h2></h2>
+         <!-- <div class="img"><img  src="#"></div>-->
        </div>
           <div class="post-light">
               <div class="paragraph-light">
@@ -81,9 +82,7 @@
                   Now, let’s get back to our Django web development project. To start, open your terminal and navigate to the directory where you'd like to create your new Django project. If you prefer, you can create a new directory in a location that works for you. To do this from the terminal, you can use the command mkdir projectname. For our example, let’s name this folder "MyFirstDjango," so the command will be mkdir MyFirstDjango. Once you've created the folder, the next step is to move into it using the command cd MyFirstDjango. 
                 </p>
 
-                 <div class="intext-img">
-                  <img src="../assets/gearwheels.webp" alt="Contact Page screenshot 2">
-                </div><br>
+                <div class="intext-img-dark"><img  src="./post-assets/startDjango/mkdir-cd.png"></div><br>
 
                 <h3>2. Setup virtual environment</h3>
                 <p>For any Django project, setting up a virtual environment makes sense. A virtual environment allows you to keep your project separate from others on your machine, providing a dedicated space for Django and any additional dependencies you may need. This way, you can avoid version conflicts – perhaps one project requires a specific version of a library while another requires a different one.</p>
@@ -91,6 +90,10 @@
                   To create a virtual environment, navigate to your project’s directory in the terminal and type the following command: python -m venv myenv, and then hit enter. (Feel free to choose a different name for your environment if you prefer.) After executing this command, you can use the ls command to see that a new folder named "myenv" has been created within your project directory.
                   Next, you'll want to activate the virtual environment you just set up. If you’re using Windows, run the command myenv\Scripts\activate. For Mac users, the command is source myenv/bin/activate. Once activated, you’ll notice the name of your environment appears in front of your command prompt, signifying that your virtual environment is now up and running.
                 </p>
+
+                <div class="intext-img">
+                  <img src="./post-assets/startDjango/env.png" alt="virtual environment">
+                </div><br>
 
               </div>
 
@@ -102,8 +105,8 @@
  <section id="33">
       <div class="blog-container-dark">
         <div class="margin-column-dark">
-        <h2>Headline</h2>
-         <div class="img"><img  src="../assets/gearwheels.webp"></div>
+        <h2></h2>
+         <!-- <div class="img"><img  src="#"></div>-->
        </div>
           <div class="post-dark">
               <div class="paragraph-dark">
@@ -113,7 +116,7 @@
                 As an optional step, you can run pip freeze to see the installed version of Django along with some additional information about other packages in your virtual environment.
                 </p>
 
-                <div class="intext-img-dark"><img  src="../assets/gearwheels.webp"></div>
+                <div class="intext-img-dark"><img  src="./post-assets/startDjango/pip.png"></div><br>
 
                 <h3>4. Start a new Django project</h3>
                 <p>With Django successfully installed in your project folder, you can now initiate a new Django project by running the command django-admin startproject myproject. (Feel free to choose a different name for your project if you prefer; however, naming it after the folder you originally created is a common practice.)
@@ -124,6 +127,7 @@
                 <p>
                 Next, navigate into the newly created Django project directory by using the cd command. When you run ls here, you’ll notice a manage.py file along with a directory that shares the same name as the project. This can result in a structure that looks like a directory named foo containing foo/foo, and that’s perfectly normal. In our example, it is myproj/mydjango, for clarification only.
                 </p>
+                <div class="intext-img-dark"><img  src="./post-assets/startDjango/startproject.png"></div><br>
               
               </div>
 
@@ -135,8 +139,8 @@
      <section id="44">
       <div class="blog-container-light">
         <div class="margin-column">
-        <h2>Headline</h2>
-         <div class="img"><img  src="../assets/gearwheels.webp"></div>
+        <h2></h2>
+         <!-- <div class="img"><img  src="#"></div>-->
        </div>
           <div class="post-light">
               <div class="paragraph-light">
@@ -147,9 +151,8 @@
                 To initiate a new app in your Django project, simply run the command python manage.py startapp myapp. As before, you can choose any name you like for your app in place of "myapp." After executing this command, if you list the directory contents again with ls, you will see the newly created app as a folder, positioned at the same level as the manage.py file inside the directory created by the startproject command. 
                 </p>
 
-                 <div class="intext-img">
-                  <img src="../assets/gearwheels.webp" alt="Contact Page screenshot 2">
-                  <div class="caption">Caption</div> 
+                <div class="intext-img">
+                  <img  src="./post-assets/startDjango/startapp.png">
                 </div><br>
 
               </div>
@@ -159,32 +162,155 @@
     </section>    
 
 
- <section id="55">
+     <section id="55">
       <div class="blog-container-dark">
         <div class="margin-column-dark">
-        <h2>Headline</h2>
-         <div class="img"><img  src="../assets/gearwheels.webp"></div>
+        <h2></h2>
        </div>
           <div class="post-dark">
               <div class="paragraph-dark">
                 <h3>6. Work with the project in your IDE or text editor</h3>
                 <p>We’re almost finished with the setup process! Now it’s time to dive into the coding. Open your favorite text editor or IDE and select "Open Project." For a Django project, the Pycharm IDE is a good option. Navigate to the directory where your Django project folder is located. In this case, you’ll want to select the outermost directory that contains both the virtual environment and all the subdirectories you’ve created subsequently. At this point, you should notice that Django has automatically populated both your app folder and the project folder with various Python files.</p>
+                 <div class="intext-img-dark"><img  src="./post-assets/startDjango/pycharm.png"></div><br>
 
-                <div class="intext-img-dark"><img  src="../assets/gearwheels.webp"></div>
                 <p>
-                  There are just a few more steps to complete the setup. First, create a new urls.py file inside your app directory and then add the app you created to the settings.py file under the installed apps section. The settings.py file contains essential configurations for your Django project, including a variable called INSTALLED_APPS. At the end of this list, simply add a new line with "myapp" before the closing brackets. Remember to include a comma after it, and then save your changes to the settings.py file.
-                </p>
+                  There are just a few more steps to complete the setup. First, create a new urls.py file inside your app directory and then add the app you created to the settings.py file under the installed apps section. The settings.py file contains essential configurations for your Django project, including a variable called INSTALLED_APPS. At the end of this list, simply add a new line with "myapp" before the closing brackets. Remember to include a comma after it, and then save your changes to the settings.py file.</p>
+
+                <pre><code class="language-python">
+                  INSTALLED_APPS = [
+                    "django.contrib.admin",
+                    "django.contrib.auth",
+                    "django.contrib.contenttypes",
+                    "django.contrib.sessions",
+                    "django.contrib.messages",
+                    "django.contrib.staticfiles",
+                    "myapp",
+                  ]
+                </code></pre>
+
                 <p>
-                  Next, open the existing urls.py file. At the top, you’ll need to modify the import statement: change from django.urls import path to from django.urls import path, include. This adjustment is necessary to inform Django about the secondary urls.py file that you will create, which will contain all the URLs relevant to your app. You can think of this process as navigating through a city: the top-level urls.py file indicates which street (app) you’re on, while the app’s urls.py file provides details about the specific house (URLs) within that street.
+                  Next, open the existing urls.py file in the outer folder. At the top, you’ll need to modify the import statement: change from django.urls import path to from django.urls import path, include. This adjustment is necessary to inform Django about the secondary urls.py file that you will create, which will contain all the URLs relevant to your app. You can think of this process as navigating through a city: the top-level urls.py file indicates which street (app) you’re on, while the app’s urls.py file provides details about the specific house (URLs) within that street.
                 </p>
+
+                <p>In the existing urls.py file, there'll already be a list of urlpatterns, having one entry only:
+                
+                <pre><code class="language-python">
+                  urlpatterns = [
+                    path("admin/", admin.site.urls),
+                    ]
+                  </code></pre>
+
+                <p>We are going to just add another line to this list:</p>
+                 <pre><code class="language-python">
+                  urlpatterns = [
+                    path("admin/", admin.site.urls),
+                    path('', include('myapp.urls')),
+                    ]
+                  </code></pre>
+
+                  <p>Save the file. If you haven't done so already, now create the urls.py file for the myapp app. If you’re using an IDE, you can simply right-click on the folder, select "New," and then choose to add a new file. Alternatively, if you prefer the terminal, navigate to the directory where you want the new file to be created and run the command touch urls.py. Inside this new urls.py file, include the following lines:</p>
+                  <pre><code class="language-python">
+                  from django.urls import path
+                  from . import views
+
+                  urlpatterns = [
+                  path('', views.home, name='home'),
+                  ]
+                  </code></pre>
+
+                  <p>The import statement for views signifies that we require access to the views.py file, which is already located in the myapp directory. Don't forget to include a comma at the end of the import line, as it's crucial. It's also worth mentioning that there isn’t a view function called home present in the views.py file yet, which is why we will create it in the upcoming step.</p>
+
+                  <p><strong>Keep in mind that when constructing a new website or sub-site in Django, you need three fundamental elements: a URL for routing, a view function, and a template featuring the appropriate HTML file.</strong></p>
               
               </div>
 
           </div>
       </div>
     </section> 
-    
-    
+
+
+     <section id="66">
+      <div class="blog-container-light">
+        <div class="margin-column">
+        <h2></h2>
+         <!-- <div class="img"><img  src="#"></div>-->
+       </div>
+          <div class="post-light">
+              <div class="paragraph-light">
+                <h3>7. Create a view</h3>
+                <p>Let's now change to the existing views.py file. At the moment, it will have only two lines of code:
+                </p>
+
+                 <pre><code class="language-python">
+                  from django.shortcuts import render
+                  &#35; Create your views here
+                </code></pre>
+
+                <p>We can just leave the import alone and replace the comment (after the &#35;) with this function:</p>
+
+                <pre><code class="language-python">
+                  from django.shortcuts import render
+                  def home(request):
+                    return render(request, 'home.html', {})
+                </code></pre>
+
+                <p>Note that home.htl refers to a HTML template we want to display to every user who sends a request to our website. However, this template does not exist yet, so we need to create it in the next step.</p>
+
+                <h3>8. Create a template</h3>
+                <p>
+               To create the home.html template, we first need to establish a templates directory within our myapp application. This directory will house all the templates associated with myapp. We can make this inside the same location where we set up urls.py, but this time we'll create a folder named templates instead of a file. Inside that folder, we’ll add a file called home.html — or whatever name you've decided for the template in your request.</p> 
+
+               <div class="intext-img">
+                  <img  src="./post-assets/startDjango/template.png">
+                </div><br>
+
+                <p>The reason we name it templates is that Django looks for HTML files in a directory by that name. As a starting point, you might want to include a simple tag in home.html:</p>
+                <pre><code class="language-html">
+                        <h1>My first Django Website</h1>
+                </code></pre>
+
+              </div>
+
+          </div>
+      </div>
+    </section> 
+
+
+         <section id="77">
+      <div class="blog-container-dark">
+        <div class="margin-column-dark">
+        <h2></h2>
+       </div>
+          <div class="post-dark">
+              <div class="paragraph-dark">
+                <h3>9. View the Website</h3>
+                <p>But… can we actually access that website? Yes, we can. Simply return to the terminal; it may still be open. If not, navigate back to the directory where manage.py resides and list the contents.
+                Now, let’s proceed with this command: python manage.py runserver.
+                Django includes a development server that will enable us to view the webpage we’re working on almost instantly. After starting the server, the output should look like this:</p>
+
+                <div class="intext-img-dark"><img  src="./post-assets/startDjango/runserver.png"></div><br>
+                <p>
+                  If there's a statement about unapplied migrations, you can ignore it for the moment. This will become relevant as soon as you start to create models with Django, which is another tutorial.
+                  If there are any bugs that Python detects, it will alert you at this point, and you will need to resolve them before you can run the server to display the webpage. As a developer, you will likely encounter this scenario repeatedly!</p>
+                  <p>
+                  To view the webpage, navigate to localhost on port 8000 by typing the following into your browser's address bar: http://127.0.0.1:8000/ (you might recognize this, right?). And what do you see? If all went well, it will be the content you added to the new home.html template!
+                </p>
+                <div class="intext-img-dark"><img  src="./post-assets/startDjango/website.png"></div><br>
+
+                <h3>10. Recap</h3>
+                <p>
+                  In this blog entry, we covered several essential steps for setting up your first Django website. We began by establishing the directory structure necessary for our store app, which included creating a templates directory to hold our HTML templates. Next, we installed Django and learned how to create our initial template, home.html, where we added some basic content. We also discussed the importance of routing and how to set up urls.py to direct web traffic to our new template. Finally, we ran the Django development server using the command python manage.py runserver, allowing us to view our work in a web browser. With these steps, you successfully created a functional website with routing capabilities and a simple homepage.  Congratulations, you just created your first website! This experience lays a solid foundation for further exploration and development in Django.
+                </p>
+                Next steps:
+                <ul>
+                  <li>Learn how to build an email contact form with Django</li>
+                </ul>
+
+              </div>
+
+          </div>
+      </div>
+    </section> 
 
 
 <!-- other Blogposts -->
@@ -240,22 +366,6 @@
 
           <div class="post">
             <img src="../assets/post-thumbnails/6.jpg"/>
-            <h6>HTML</h6>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a href="#" class="green-link">Learn more</a></p>
-          </div> 
-
-          <div class="post">
-            <img src="../assets/post-thumbnails/1.jpg"/>
-            <h6>HTML</h6>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a href="#" class="green-link">Learn more</a></p>
-          </div> 
-
-          <div class="post">
-            <img src="../assets/post-thumbnails/2.jpg"/>
             <h6>HTML</h6>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non

@@ -76,7 +76,8 @@
 /* Image styling for the intext image */
 .intext-img-dark img {
   border-radius: 11px; 
-  max-width: 300px;                 /* Responsive image for intext */
+  width: 500px;
+  max-width: 100%;                 /* Responsive image for intext */
   height: auto;                    /* Maintain aspect ratio */
   display: block;                  /* Block-level to allow margin */
   margin: 10px auto;              /* Center align with some spacing */
@@ -146,6 +147,7 @@
 
 /* Image styling for the intext image */
 .intext-img img {
+    width: 500px;
     border-radius: 11px;
     max-width: 500px; /* Responsive image for intext */
     height: auto; /* Maintain aspect ratio */
