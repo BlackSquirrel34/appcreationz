@@ -29,46 +29,44 @@
 
 <!-- Projects Welcome Section -->
  <div class="blog-post">
-      <h2>Blog Post</h2>
+      <h2>HTTP requests: A beginner's guide</h2>
 
        <div class="intext-img">
-            <img src="../assets/gearwheels.webp" alt="caption"/>
+            <img src="./post-assets/squirrels/building_upscaled.jpg" alt="squirrel"/>
       </div> 
 
       <div class="post-head">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
-      </div>
+          <p>Hey there, future web developer! (star smiley) If you’re reading this, you might be curious about how all those cool web pages function behind the scenes. At the heart of this digital communication is something called HTTP, which stands for Hypertext Transfer Protocol. It’s basically a set of rules for how clients (like your web browser) and servers (the computers hosting websites) talk to each other. Today, I’m explore the world of HTTP requests with you – so grab some coffee or whatever favorite beverage you have and let’s get started!
 
 </div>
 
  <section id="11">
       <div class="blog-container-dark">
         <div class="margin-column-dark">
-        <h2>Headline</h2>
-         <div class="img"><img  src="../assets/gearwheels.webp"></div>
+        <h2></h2>
        </div>
           <div class="post-dark">
               <div class="paragraph-dark">
-                <h3>Blogpost sub-headline</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3>What is an HTTP Request?</h3>
+                <p>When you use your browser to visit a website (like this one), your browser is acting as a client that sends an HTTP request to a server. This request is a structured message that asks the server to perform a specific action  – like sending back the HTML content for the web page you want to view. Think of it as sending a letter to a friend, asking for information.</p>
 
-                <div class="intext-img-dark"><img  src="../assets/gearwheels.webp"></div><br>
+                <h3>The Structure of an HTTP Request</h3>
               
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p>Every HTTP request follows a specific format that helps the server understand what you want. Here’s a simple breakdown:</p>
+                <p>
+                  <strong>1. Request Line:</strong> This is the first line of your request. It includes three parts—a method, a URL (Uniform Resource Locator), and the HTTP version. For example: GET /homepage.html HTTP/1.1. Here:
+                          <ul>
+                            <li>GET tells the server you want to retrieve something.</li> 
+                          <li>/homepage.html is the address of the resource you're looking for.</li>
+                          <li>HTTP/1.1 indicates which version of HTTP you’re using.</li>
+                          </ul>
+                  <strong>2. Headers:</strong> Below the request line, you’ll find headers, which are key-value pairs that provide additional information to the server. For example, User-Agent lets the server know what type of device is making the request. Here are a few common headers:
+                          <ul>
+                            <li>Accept: Specifies the types of content that the client can process (like text/html for HTML pages). </li>
+                            <li>Authorization: If you need to log in or verify your identity.</li>
+                            <li>Content-Type: This indicates the type of data being sent, especially in cases where you're submitting forms or data.</li>
+                          </ul>
+                  <strong>3. Body:</strong> This is optional—it's where you include any data that you want to send to the server. For example, when filling out a form and hitting submit, the data entered is sent in the body of the request.
                 </p>
               </div>
 
@@ -79,19 +77,19 @@
      <section id="22">
       <div class="blog-container-light">
         <div class="margin-column">
-        <h2>Headline</h2>
-         <div class="img"><img  src="../assets/gearwheels.webp"></div>
+        <h2></h2>
        </div>
           <div class="post-light">
               <div class="paragraph-light">
-                <h3>Blogpost sub-headline</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                 <div class="intext-img">
-                  <img src="../assets/gearwheels.webp" alt="Contact Page screenshot 2">
-                  <div class="caption">Caption</div> 
-                </div><br>
+                <h3>Different Methods in HTTP Requests</h3>
+                <p>Now let’s discuss the different types of HTTP methods. Each method has a different purpose, and here's a quick guide to help you remember:</p>
+                <ul>
+                    <li>GET: Retrieves data from the server. (Think of it as asking for a menu from a restaurant.)</li>
+                    <li>POST: Sends data to the server. (It’s like placing an order at that restaurant.) </li>
+                    <li>PUT: Updates existing data or creates a new resource. (This is like modifying your order before it’s prepared.) </li>
+                    <li>DELETE: Removes a resource. (Imagine canceling your order.) </li>
+                    <li>PATCH: Partially updates an existing resource without altering the entire object. (It’s like making a small change to your existing order. </li>
+                <ul>
 
               </div>
 
@@ -103,21 +101,25 @@
  <section id="33">
       <div class="blog-container-dark">
         <div class="margin-column-dark">
-        <h2>Headline</h2>
-         <div class="img"><img  src="../assets/gearwheels.webp"></div>
+        <h2></h2>
        </div>
           <div class="post-dark">
               <div class="paragraph-dark">
-                <h3>Paragraph heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3>Crafting Your First Request: GET</h3>
+                <p>Let’s say you want to get the latest articles from a blog. Your HTTP request might look like this:</p>
 
-                <div class="intext-img-dark"><img  src="../assets/gearwheels.webp"></div>
-              
+                <p>GET /articles/latest HTTP/1.1<br>
+                  Host: www.exampleblog.com<br>
+                  User-Agent: YourBrowser/1.0<br>
+                  Accept: application/json</p>
+
+                  <p>In this example:</p>
+                  <ul>
+                    <li>You’re using the GET method to request the latest articles. </li>
+                    <li>The Host header specifies which server you’re sending your request to.</li>
+                    <li>The User-Agent helps the server format the response based on your device. </li>
+                  </ul>
+
               </div>
 
           </div>
@@ -128,19 +130,22 @@
      <section id="44">
       <div class="blog-container-light">
         <div class="margin-column">
-        <h2>Headline</h2>
-         <div class="img"><img  src="../assets/gearwheels.webp"></div>
+        <h2></h2>
        </div>
           <div class="post-light">
               <div class="paragraph-light">
-                <h3>Blogpost sub-headline</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3>Another Example: POST</h3>
+                <p>Here’s an example of an HTTP request you might make when logging into a website:</p>
+                  
+                  <p>
+                  POST /login HTTP/1.1<br>
+                  Host: www.example.com<br>
+                  Content-Type: application/x-www-form-urlencoded<br>
+                  Content-Length: 27<br>
+                  username=myUser&password=myPass
+                  </p><br>
 
-                 <div class="intext-img">
-                  <img src="../assets/gearwheels.webp" alt="Contact Page screenshot 2">
-                  <div class="caption">Caption</div> 
-                </div><br>
+                  <p>Here, you’re sending a POST request to the /login endpoint, including your username and password in the body—leading to the server checking those credentials. It is considered good practice to use GET requests when you're only interested in reading a resource, which will always give the same anser from the server – as opposed to changing something, such as logging in with a password. Here, when sending the same request again, you will already be logged in.</p>
 
               </div>
 
@@ -152,20 +157,13 @@
  <section id="55">
       <div class="blog-container-dark">
         <div class="margin-column-dark">
-        <h2>Headline</h2>
-         <div class="img"><img  src="../assets/gearwheels.webp"></div>
+        <h2></h2>
        </div>
           <div class="post-dark">
               <div class="paragraph-dark">
-                <h3>Paragraph heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                <div class="intext-img-dark"><img  src="../assets/gearwheels.webp"></div>
+                <h3>Wrapping Up</h3>
+                <p>And that’s it! HTTP requests may seem complex at a glance, but once you break them down into their individual parts, they become much more manageable. As you continue your journey in web development, understanding HTTP requests will be like having a superpower in your toolkit.<br>
+                In the next part of this guide, we’ll explore how to handle responses from the server. So, stay tuned!  Happy coding, and keep that curiosity alive!</p>
               
               </div>
 
